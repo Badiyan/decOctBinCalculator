@@ -15,7 +15,7 @@ namespace decOctBinCalculator
             string[] inputDataSplitted = inputDataRaw.Split(' ');
             
             string[] allowedBases = { "2", "8", "10", "16" };
-            if ((allowedBases.Contains(inputDataSplitted[1]) == false) | (allowedBases.Contains(inputDataSplitted[2]) == false))  {
+            if ((allowedBases.Contains(inputDataSplitted[1]) == false) | (allowedBases.Contains(inputDataSplitted[2]) == false) | (inputDataSplitted[1] == inputDataSplitted[2])) {
                 Console.WriteLine("\n Incorrect base value \n");
                 goto Restart; 
             };
